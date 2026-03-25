@@ -79,11 +79,8 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach((s) => sectionObserver.observe(s));
 
-// Fake submit (later koppelen we dit aan email/Google Forms/Sheets)
 const form = $("#contactForm");
 const note = $("#formNote");
 form?.addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (note) note.textContent = "✅ Bericht klaar om te verzenden. (Later koppelen we dit aan email of database.)";
-  form.reset();
+  if (note) note.textContent = "✅ Bericht verzonden! We nemen snel contact op.";
 });
