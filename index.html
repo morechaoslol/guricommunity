@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guri — Somali Community Eindhoven</title>
+  <meta name="description" content="Guri betekent huis — een warme, veilige plek waar de Somalische community samenkomt in Eindhoven." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollBar"></div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Hoofdnavigatie">
+      <a class="brand" href="#top">
+        <img class="brand__logo" src="assets/guri-logo.png.jpg" alt="Guri Somali Community logo" />
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a class="nav__link" href="#missie">Missie</a>
+        <a class="nav__link" href="#activiteiten">Activiteiten</a>
+        <a class="nav__link" href="#doelgroepen">Doelgroepen</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="btn btn--small" href="#activiteiten">Bekijk agenda</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="badge">Eindhoven • Somali Community</p>
+          <h1>Guri betekent <span class="accent">“huis”</span> — en dat voel je.</h1>
+          <p class="lead">
+            Een warme, veilige plek waar de Somalische community samenkomt, elkaar versterkt en zich thuis voelt.
+            We verbinden mensen via sociale, educatieve en culturele activiteiten.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#activiteiten">Ontdek activiteiten</a>
+            <a class="btn btn--ghost" href="#missie">Lees onze missie</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">Sociaal</div>
+              <div class="stat__label">verbinden & vriendschappen</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Educatief</div>
+              <div class="stat__label">taal, skills & groei</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Cultureel</div>
+              <div class="stat__label">gezelligheid & community</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media reveal" data-reveal-delay="120">
+          <div class="media-card">
+            <img src="assets/collage.png" alt="Impressie van Guri activiteiten" />
+            <div class="media-card__overlay">
+              <p><strong>Workshops • Bijeenkomsten • Uitjes</strong></p>
+              <p class="muted">Samen groeien, verbinden en genieten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#missie" aria-label="Scroll naar missie">
+        <span>Scroll</span>
+        <div class="scroll-hint__dot"></div>
+      </a>
+    </section>
+
+    <!-- Missie / Visie -->
+    <section class="section container" id="missie">
+      <div class="section__head reveal">
+        <h2>Onze missie</h2>
+        <p class="muted">
+          Guri is het online én offline thuis van de Somalische community in Eindhoven en omgeving.
+          Wij creëren een omgeving waarin verbinding, ontwikkeling en gezelligheid centraal staan.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <h3>Verbinding</h3>
+          <p>Mensen dichter bij elkaar brengen door ontmoetingen, netwerken en community-momenten.</p>
+        </article>
+        <article class="card reveal" data-reveal-delay="80">
+          <h3>Ontwikkeling</h3>
+          <p>Workshops en laagdrempelige lessen die zelfvertrouwen, skills en groei stimuleren.</p>
+        </article>
+        <article class="card reveal" data-reveal-delay="160">
+          <h3>Thuisgevoel</h3>
+          <p>Een warme plek waar iedereen zich welkom voelt en elkaar kan versterken.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Activiteiten -->
+    <section class="section section--alt" id="activiteiten">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Activiteiten</h2>
+          <p class="muted">Een mix van sociaal, creatief en educatief — voor verschillende leeftijden en interesses.</p>
+        </div>
+
+        <div class="activities">
+          <article class="activity-card reveal">
+            <div class="activity-card__top">
+              <h3>Bijeenkomsten & Socials</h3>
+              <span class="pill">Jonge dames</span>
+            </div>
+            <p>Socialiseren, nieuwe mensen leren kennen en vriendschappen opbouwen in een veilige sfeer.</p>
+            <div class="activity-card__meta">
+              <span>👥 Community</span><span>📍 Eindhoven</span>
+            </div>
+            <a class="link" href="#contact">Interesse? Neem contact op →</a>
+          </article>
+
+          <article class="activity-card reveal" data-reveal-delay="80">
+            <div class="activity-card__top">
+              <h3>Workshops & Uitjes</h3>
+              <span class="pill">Inspirerend</span>
+            </div>
+            <p>Leuke en inspirerende activiteiten die bijdragen aan persoonlijke groei en saamhorigheid.</p>
+            <div class="activity-card__meta">
+              <span>🎨 Creatief</span><span>🤝 Netwerk</span>
+            </div>
+            <a class="link" href="#contact">Aanmelden / vragen →</a>
+          </article>
+
+          <article class="activity-card reveal" data-reveal-delay="160">
+            <div class="activity-card__top">
+              <h3>Taallessen (Nederlands)</h3>
+              <span class="pill">Moeders</span>
+            </div>
+            <p>Laagdrempelig oefenen met Nederlands, gericht op dagelijks gebruik en zelfredzaamheid.</p>
+            <div class="activity-card__meta">
+              <span>🗣️ Taal</span><span>📚 Educatief</span>
+            </div>
+            <a class="link" href="#contact">Info & startdata →</a>
+          </article>
+
+          <article class="activity-card reveal">
+            <div class="activity-card__top">
+              <h3>Naaicursus</h3>
+              <span class="pill">Moeders</span>
+            </div>
+            <p>Samen leren naaien, creatief bezig zijn en praktische vaardigheden opbouwen.</p>
+            <div class="activity-card__meta">
+              <span>🧵 Skills</span><span>☕ Gezellig</span>
+            </div>
+            <a class="link" href="#contact">Meedoen →</a>
+          </article>
+
+          <article class="activity-card reveal" data-reveal-delay="80">
+            <div class="activity-card__top">
+              <h3>Creatieve workshops</h3>
+              <span class="pill">All ages</span>
+            </div>
+            <p>Creativiteit als verbinding: schilderen, decoratie, henna-avond, of iets nieuws.</p>
+            <div class="activity-card__meta">
+              <span>🖌️ Creatief</span><span>✨ Fun</span>
+            </div>
+            <a class="link" href="#contact">Suggestie insturen →</a>
+          </article>
+
+          <article class="activity-card reveal" data-reveal-delay="160">
+            <div class="activity-card__top">
+              <h3>Ontmoetingsmomenten</h3>
+              <span class="pill">Community</span>
+            </div>
+            <p>Informeel samenkomen voor gesprek, steun, en gezelligheid — zoals een tweede thuis.</p>
+            <div class="activity-card__meta">
+              <span>💛 Support</span><span>🫶 Samen</span>
+            </div>
+            <a class="link" href="#contact">Meer info →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doelgroepen -->
+    <section class="section container" id="doelgroepen">
+      <div class="section__head reveal">
+        <h2>Voor wie is Guri?</h2>
+        <p class="muted">We focussen op jonge dames én op oudere vrouwen/moeders — met passende activiteiten.</p>
+      </div>
+
+      <div class="split">
+        <div class="panel reveal">
+          <h3>Jonge Somalische dames</h3>
+          <ul class="list">
+            <li>Socials & bijeenkomsten</li>
+            <li>Workshops en uitjes</li>
+            <li>Netwerkactiviteiten</li>
+            <li>Zelfvertrouwen & persoonlijke groei</li>
+          </ul>
+        </div>
+
+        <div class="panel reveal" data-reveal-delay="120">
+          <h3>Oudere vrouwen & moeders</h3>
+          <ul class="list">
+            <li>Taallessen (Nederlands)</li>
+            <li>Naaicursussen</li>
+            <li>Creatieve workshops</li>
+            <li>Sociale ontmoetingsmomenten</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <div>
+            <h2>Contact</h2>
+            <p class="muted">
+              Wil je meedoen, samenwerken of een activiteit voorstellen?
+              Stuur ons een bericht — we reageren zo snel mogelijk.
+            </p>
+
+            <div class="contact__info">
+              <div class="info-row"><span>📍</span><div><strong>Eindhoven</strong><br><span class="muted">Nederland</span></div></div>
+              <div class="info-row"><span>💬</span><div><strong>DM / Email</strong><br><span class="muted">Voeg straks je echte contactgegevens toe</span></div></div>
+            </div>
+          </div>
+
+<form class="form" id="contactForm" action="https://formspree.io/f/xvzvplgg" method="POST">
+  <label>
+    Naam
+    <input type="text" name="naam" placeholder="Jouw naam" required />
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" placeholder="jij@email.com" required />
+  </label>
+  <label>
+    Bericht
+    <textarea name="bericht" rows="5" placeholder="Waar kunnen we je mee helpen?" required></textarea>
+  </label>
+  <button class="btn" type="submit">Verstuur</button>
+  <p class="form__note muted" id="formNote" aria-live="polite"></p>
+</form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img class="footer__logo" src="assets/guri-logo.png.jpg" alt="Guri Somali Community logo" />
+        <p class="muted">Guri — het online thuis van de Somalische community in Eindhoven.</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#missie">Missie</a>
+        <a href="#activiteiten">Activiteiten</a>
+        <a href="#doelgroepen">Doelgroepen</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__right">
+        <a class="btn btn--ghost btn--small" href="#top">↑ Naar boven</a>
+        <p class="muted">© <span id="year"></span> Guri</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
