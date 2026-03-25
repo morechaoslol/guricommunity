@@ -81,6 +81,18 @@ sections.forEach((s) => sectionObserver.observe(s));
 
 const form = $("#contactForm");
 const note = $("#formNote");
-form?.addEventListener("submit", (e) => {
-  if (note) note.textContent = "✅ Bericht verzonden! We nemen snel contact op.";
+form?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  const response = await fetch("https://formspree.io/f/xvzvplgg", {
+    method: "POST",
+    body: data,
+    headers: { Accept: "application/json" }
+  });
+  if (response.ok) {
+    note.textContent = "✅ Bericht verzonden! We nemen snel contact op.";
+    form.reset();
+  } else {
+    note.textContent = "❌ Er ging iets mis. Probeer het opnieuw.";
+  }
 });
